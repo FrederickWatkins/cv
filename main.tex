@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Stylish Curriculum Vitae
 % LaTeX Template
 % Version 1.1 (September 10, 2021)
@@ -13,9 +13,10 @@
 % License:
 % CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+% Paper options using the scrartcl class
+\documentclass[a4paper, oneside, final]{scrartcl}
 
 \usepackage{scrlayer-scrpage} % Provides headers and footers configuration
 \usepackage{titlesec} % Allows creating custom \section's
@@ -25,55 +26,74 @@
 \usepackage{microtype} % To enable letterspacing
 \usepackage{multirow}
 
-\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+% Section formatting
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
 
-\pagestyle{scrheadings} % Print the headers and footers on all pages
+% Print the headers and footers on all pages
+\pagestyle{scrheadings}
 
-\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
-\addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
+% Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\voffset}{-0.5in}
 
-\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+% Adjust the text height - less whitespace at the bottom of the page
+\addtolength{\textheight}{3cm}
+
+% Custom highlighting for the work experience and education sections
+\newcommand{\gray}{\rowcolor[gray]{.90}} 
 
 %\renewcommand{\tabularxcolumn}[1]{m{#1}}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	FOOTER SECTION
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
-\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+% Font settings for footer
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape}
 
 \cofoot{
 \fontsize{12.5}{17}\selectfont % Letter spacing and font size
 
-\textls[150]{26 Rushett Close{\large\textperiodcentered} Thames Ditton {\large\textperiodcentered} England {\large\textperiodcentered} KT7 0UR}\\ % Your mailing address
-{\Large\Letter} \textls[150]{freddiewatkins6@gmail.com \ {\Large\Telefon} (+44) 07887 403089} % Your email address and phone number
+\textls[150]{
+    26 Rushett Close
+    {\large\textperiodcentered}
+    Thames Ditton
+    {\large\textperiodcentered}
+    England
+    {\large\textperiodcentered}
+    KT7 0UR
+}\\ % Your mailing address
+{\Large\Letter} \textls[150]{
+    freddiewatkins6@gmail.com \ {\Large\Telefon} (+44) 07887 403089}
 }
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \begin{document}
 
 \begin{center} % Center everything in the document
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	HEADER SECTION
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
-{\fontsize{36}{36}\selectfont\scshape\textls[200]{Frederick Watkins}} % Your name at the top
+{\fontsize{36}{36}\selectfont\scshape\textls[200]{Frederick Watkins}}
 
 \vspace{1.5cm} % Extra whitespace after the large name at the top
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	PROFILE
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \section{Profile}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et auctor neque. Nullam ultricies sem sit amet magna tristique imperdiet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus eget mollis nunc.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et auctor neque.
+Nullam ultricies sem sit amet magna tristique imperdiet. Cum sociis natoque
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus
+eget mollis nunc.
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	WORK EXPERIENCE
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \section{Work Experience}
 
@@ -82,89 +102,113 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et auctor neque. 
 \gray Employer & \textbf{McLaren Applied Technologies} \hfill Woking, England\\
 \gray Job Title & \textbf{Work Experience Student}\\
 \gray Department & \textbf{Software}\\
-& In the summer of 2019 I did a week long work experience placement in the Software Department of McLaren Applied Technologies. I gained some experience in embedded software development, as well as learning how the various parts of the business operate.
+& In the summer of 2019 I did a week long work experience placement in the
+Software Department of McLaren Applied Technologies. I gained some experience
+in embedded software development, as well as learning how the various parts of
+the business operate.
 \end{tabularx}
 
 \vspace{12pt}
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2.5cm}X}
-\gray Period & \textbf{September 2022 --- July 2023}\\
-\gray Employer & \textbf{Cambridge Consultants} \hfill Cambridge, England\\
-\gray Job Title & \textbf{Tech Scholar (pre-university intern)}\\
-\gray Department & \textbf{Electronics and Software}\\
-\gray Languages & \textbf{Python, C}\\
-& I took a gap year between finishing my A-Levels and starting university, in which I did an internship at an engineering consultancy
-called Cambridge Consultants. During this placement I was able to take on significant responsibilities on various projects, using skills
-such as:
-{\begin{tabularx}{\linewidth}[t]{@{} *{2}{>{\raggedright\arraybackslash}X}}
-Writing Python device drivers & Using version control\\
-Creating wiring diagrams & Multi-disciplinary teamwork\\
-Idea generation with scientists & Simulating amplifiers in LTSpice\\
-Managing deadlines & 2 layer PCB design\\
-\end{tabularx}}\\
+    \gray Period & \textbf{September 2022 --- July 2023}\\
+    \gray Employer & \textbf{Cambridge Consultants} \hfill Cambridge, England\\
+    \gray Job Title & \textbf{Tech Scholar (pre-university intern)}\\
+    \gray Department & \textbf{Electronics and Software}\\
+    \gray Languages & \textbf{Python, C}\\
+    & I took a gap year between finishing my A-Levels and starting university,
+    in which I did an internship at an engineering consultancy called Cambridge
+    Consultants. During this placement I was able to take on significant
+    responsibilities on various projects, using skills such as:
+    {\begin{tabularx}{\linewidth}[t]{@{} *{2}{>{\raggedright\arraybackslash}X}}
+        Writing Python device drivers & Using version control\\
+        Creating wiring diagrams & Multi-disciplinary teamwork\\
+        Idea generation with scientists & Simulating amplifiers in LTSpice\\
+        Managing deadlines & 2 layer PCB design\\
+    \end{tabularx}}\\
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	EDUCATION
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \section{Education}
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2.5cm}X}
-\gray Period & \textbf{September 2020 --- June 2022}\\
-\gray Qualifications & \textbf{A-Levels}\\
-\gray School & \textbf{Hinchley Wood Secondary School} \hfill Hinchley Wood, England\\
-Grades & {\begin{tabularx}{\linewidth}[t]{@{} *{2}{>{\raggedright\arraybackslash}X  >{\raggedleft\arraybackslash}p{0.5cm}} @{}}
-       Chemistry & A & Mathematics & A*\\
-       Further Mathematics & A* & Physics & A*\\
-\end{tabularx}}
+    \gray Period & \textbf{September 2020 --- June 2022}\\
+    \gray Qualifications & \textbf{A-Levels}\\
+    \gray School & \textbf{Hinchley Wood Secondary School}
+    \hfill Hinchley Wood, England\\
+    Grades & {\begin{tabularx}{\linewidth}[t]{@{} *{2}{
+        >{\raggedright\arraybackslash}X
+        >{\raggedleft\arraybackslash}p{0.5cm}
+    } @{}}
+        Chemistry & A & Mathematics & A*\\
+        Further Mathematics & A* & Physics & A*\\
+    \end{tabularx}}
 \end{tabularx}
 
 \vspace{12pt}
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2.5cm}X}
-\gray Period & \textbf{September 2015 --- July 2020}\\
-\gray Qualifications & \textbf{GCSEs}\\
-\gray School & \textbf{Hinchley Wood Secondary School} \hfill Hinchley Wood, England\\
-Grades & {\begin{tabularx}{\linewidth}[t]{@{} *{2}{>{\raggedright\arraybackslash}X  >{\raggedleft\arraybackslash}p{0.5cm}} @{}}
-       Art \& Design (3D Design) & 6    & Further Mathematics & 8\\
-       Biology & 8                      & Japanese & 6\\
-       Chemistry & 9                    & Mathematics & 9\\
-       Computer Science & 8             & Physics & 9\\
-       English Language & 6             & Sociology & 7\\
-       English Literature & 6\\
-\end{tabularx}}\\
+    \gray Period & \textbf{September 2015 --- July 2020}\\
+    \gray Qualifications & \textbf{GCSEs}\\
+    \gray School &
+    \textbf{Hinchley Wood Secondary School} \hfill Hinchley Wood, England\\
+    Grades & {\begin{tabularx}{\linewidth}[t]{@{} *{2}{
+        >{\raggedright\arraybackslash}X
+        >{\raggedleft\arraybackslash}p{0.5cm}
+    } @{}}
+        Art \& Design (3D Design) & 6    & Further Mathematics & 8\\
+        Biology & 8                      & Japanese & 6\\
+        Chemistry & 9                    & Mathematics & 9\\
+        Computer Science & 8             & Physics & 9\\
+        English Language & 6             & Sociology & 7\\
+        English Literature & 6\\
+    \end{tabularx}}\\
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	SKILLS
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \section{Skills}
 
-\begin{tabularx}{0.9\linewidth}{>{\raggedright\bfseries\arraybackslash}b{4.2cm} >{\raggedright\arraybackslash}X }
-Languages
-& {\begin{tabularx}{\linewidth}[t]{@{} *{2}{>{\raggedright\arraybackslash}X  >{\raggedleft\arraybackslash}c} @{}}
-    English & Native & French & Beginner\\
-    Japanese & GCSE\\
-\end{tabularx}} \\
-Programming Languages & Python, C, Rust, \LaTeX\\
-Software & Microsoft Word, Excel, Visio, PowerPoint; Altium Designer; LTSpice; Git;\\
+\begin{tabularx}{0.9\linewidth}{
+    >{\raggedright\bfseries\arraybackslash}b{4.2cm}
+    >{\raggedright\arraybackslash}X
+}
+    Languages
+    & {\begin{tabularx}{\linewidth}[t]{@{} *{2}{
+        >{\raggedright\arraybackslash}X
+        >{\raggedleft\arraybackslash}c
+    } @{}}
+        English & Native & French & Beginner\\
+        Japanese & GCSE\\
+    \end{tabularx}} \\
+    Programming Languages & Python, C, Rust, \LaTeX\\
+    Software & Microsoft Word, Excel, Visio, PowerPoint; Altium Designer;
+    LTSpice; Git;\\
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	HOBBIES
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \section{Hobbies}
 
-\begin{tabularx}{0.9\linewidth}{>{\raggedright\bfseries\arraybackslash}b{4.2cm} >{\raggedright\arraybackslash}X }
-Electronics Design & DIY mechanical keyboard\\
-Classic Car Restoration & Restoration of a Honda 50cc Monkey Bike and a 1976 MGB GT\\
-Programming & Firmware for DIY keyboard, basic operating system implemented in Rust
+\begin{tabularx}{0.9\linewidth}{
+    >{\raggedright\bfseries\arraybackslash}b{4.2cm}
+    >{\raggedright\arraybackslash}X
+}
+    Electronics Design & DIY mechanical keyboard\\
+    Classic Car Restoration & Restoration of a Honda 50cc Monkey Bike and a
+    1976 MGB GT\\
+    Programming & Firmware for DIY keyboard, basic operating system implemented
+    in Rust
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \end{center}
 
